@@ -7,7 +7,7 @@ public class LoginRequestValidator : AbstractValidator<LoginRequest>
     public LoginRequestValidator() { 
 
     //Email
-    RuleFor(e => e.Email).NotEmpty().WithMessage("Email is required.")
+    RuleFor(e => e.Email).NotEmpty().WithMessage("Email cannot be blank.")
         .EmailAddress().WithMessage("Invalid email format.");
 
     //Password
