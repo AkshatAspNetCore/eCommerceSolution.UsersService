@@ -6,7 +6,7 @@ using ECommerceApp.Core.ServiceContracts;
 
 namespace ECommerceApp.Core.Services;
 
-internal class UserService : IUserService
+public class UserService : IUserService
 {
     private readonly IUsersRepository _usersRepository;
     private readonly IMapper _mapper;
