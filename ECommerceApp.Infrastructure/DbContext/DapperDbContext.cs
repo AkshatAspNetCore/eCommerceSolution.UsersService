@@ -11,9 +11,9 @@ public class DapperDbContext
 
     public DapperDbContext(IConfiguration configuration)
     {
-        //TO DO: Initialize the database connection here, such as using Dapper to connect to a SQL database.
-        _configuration = configuration;
-        string? connectionString = _configuration.GetConnectionString("PostgresConnection");
+        //Initialize the database connection here, such as using Dapper to connect to a SQL database.
+        string connectionStringTemplate = _configuration.GetConnectionString("PostgresConnection")!;
+        string? connectionString = connectionStringTemplate.Replace("$POSTGRES_HOST", Environment.GetEnvironmentVariable("POSTGRES_HOST")).Replace("$POSTGRES_PASSWORD", Environment.GetEnvironmentVariable("POSTGRES_PASSWORD"));
 
         //Create a new NpgsqlConnection using the connection string and open the connection
         _connection = new NpgsqlConnection(connectionString);
