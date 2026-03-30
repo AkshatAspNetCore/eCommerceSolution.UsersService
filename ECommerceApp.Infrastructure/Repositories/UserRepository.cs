@@ -1,13 +1,11 @@
 ﻿using Dapper;
-using ECommerceApp.Core.DTO;
 using ECommerceApp.Core.Entities;
-using ECommerceApp.Core.Mappers;
 using ECommerceApp.Core.RepositoryContracts;
 using ECommerceApp.Infrastructure.DbContext;
 
 namespace ECommerceApp.Infrastructure.Repositories;
 
-internal class UserRepository : IUsersRepository
+public class UserRepository : IUsersRepository
 {
     private readonly DapperDbContext _dbContext;
 
