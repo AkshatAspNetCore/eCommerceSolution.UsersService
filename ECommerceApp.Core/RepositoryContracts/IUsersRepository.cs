@@ -18,4 +18,11 @@ public interface IUsersRepository
     /// <param name="password"></param>
     /// <returns></returns>
     Task<ApplicationUser?> GetUserByEmailAndPassword(string? email, string? password);
+
+    /// <summary>
+    /// Returns the user data based on the user id stored in the database.
+    /// </summary>
+    /// <param name="UserID">UserID to search.</param>
+    /// <returns>ApplicationUser object that matches with the given UserID.</returns>
+    Task<ApplicationUser?> GetUserByUserID(Guid? UserID);
 }
