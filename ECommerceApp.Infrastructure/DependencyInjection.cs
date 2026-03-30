@@ -14,7 +14,7 @@ public static class DependencyInjection
     /// <returns></returns>
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
-        //TO DO: Add infrastructure services here, such as database context, repositories, etc.
+        //Add infrastructure services here, such as database context, repositories, etc.
         services.AddTransient<IUsersRepository, UserRepository>();
         services.AddTransient<DapperDbContext>();
         return services;

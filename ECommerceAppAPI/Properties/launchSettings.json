@@ -6,7 +6,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "POSTGRES_PORT": "5432",
-        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_DATABASE": "eCommerceUsersDB",
         "POSTGRES_USER": "postgres",
         "POSTGRES_PASSWORD": "admin",
         "POSTGRES_HOST": "localhost"
@@ -20,7 +20,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "POSTGRES_PORT": "5432",
-        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_DATABASE": "eCommerceUsersDB",
         "POSTGRES_USER": "postgres",
         "POSTGRES_PASSWORD": "admin",
         "POSTGRES_HOST": "localhost"
@@ -34,7 +34,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "POSTGRES_PORT": "5432",
-        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_DATABASE": "eCommerceUsersDB",
         "POSTGRES_USER": "postgres",
         "POSTGRES_PASSWORD": "admin",
         "POSTGRES_HOST": "localhost"
@@ -48,7 +48,7 @@
         "ASPNETCORE_HTTPS_PORTS": "8081",
         "ASPNETCORE_HTTP_PORTS": "8080",
         "POSTGRES_PORT": "5432",
-        "POSTGRES_DATABASE": "eCommerceUsers",
+        "POSTGRES_DATABASE": "eCommerceUsersDB",
         "POSTGRES_USER": "postgres",
         "POSTGRES_PASSWORD": "admin",
         "POSTGRES_HOST": "localhost"

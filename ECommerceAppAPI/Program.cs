@@ -22,6 +22,8 @@ builder.Services.AddControllers().AddJsonOptions(
 builder.Services.AddAutoMapper(config =>
 {
     config.AddProfile<ApplicationUserMappingProfile>();
+    config.AddProfile<ResgisterRequestMappingProfile>();
+    config.AddProfile<ApplicationUserToUserDTOMappingProfile>();
 });
 
 //FluentValidations

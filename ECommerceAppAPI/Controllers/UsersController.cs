@@ -17,7 +17,7 @@ namespace ECommerceAppAPI.Controllers
         }
 
         // GET api/users/{userID}
-        [HttpGet("userID")]
+        [HttpGet("{userID}")]
         public async Task<IActionResult> GetUserByUserID(Guid userID)
         {
             if (userID == Guid.Empty)

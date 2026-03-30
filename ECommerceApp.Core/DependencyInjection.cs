@@ -16,7 +16,7 @@ public static class DependencyInjection
     /// <returns></returns>
     public static IServiceCollection AddCore(this IServiceCollection services)
     {
-        //TO DO: Add core services here, such as database context, repositories, etc.
+        //Add core services here, such as database context, repositories, etc.
         services.AddTransient<IUserService, UserService>();
         services.AddValidatorsFromAssemblyContaining<LoginRequestValidator>();
         return services;

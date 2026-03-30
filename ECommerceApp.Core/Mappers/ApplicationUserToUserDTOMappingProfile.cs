@@ -10,8 +10,8 @@ public class ApplicationUserToUserDTOMappingProfile : Profile
     {
         CreateMap<ApplicationUser, UserDTO>()
         .ForMember(dest => dest.UserID, opt => opt.MapFrom(src => src.Id))
-        .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Gender))
-        .ForMember(dest => dest.PersonName, opt => opt.MapFrom(src => src.Username))
+        .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+        .ForMember(dest => dest.Username, opt => opt.MapFrom(src => src.Username))
         .ForMember(dest => dest.Gender, opt => opt.MapFrom(src => src.Gender));
     }
 }
