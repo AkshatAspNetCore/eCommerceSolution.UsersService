@@ -17,7 +17,7 @@ public class UserRepository : IUsersRepository
     public async Task<ApplicationUser?> AddUser(ApplicationUser user)
     {
         //Generate a new Id for the user
-        user.Id = Guid.NewGuid();
+        user.UserID = Guid.NewGuid();
 
         //SQL Query to insert the user into the database 
         string query = "INSERT INTO public. \"Users\"(\"UserID\",\"Email\",\"Username\", " +
