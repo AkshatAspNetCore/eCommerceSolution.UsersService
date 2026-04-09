@@ -48,7 +48,7 @@ public class UserRepository : IUsersRepository
         string query = "SELECT * FROM public.\"Users\" WHERE " +
             "\"UserID\" = @UserID";
 
-        var parameters = new { UserID = userID.ToString() };
+        var parameters = new { UserID = userID };
 
         using var connection = _dbContext.connection; 
         return await connection.QueryFirstOrDefaultAsync<ApplicationUser>(query, parameters);
