@@ -21,7 +21,7 @@ public class UserRepository : IUsersRepository
 
         //SQL Query to insert the user into the database 
         string query = "INSERT INTO public. \"Users\"(\"UserID\",\"Email\",\"Username\", " +
-            "\"Gender\",\"Password\") VALUES (@Id, @Email, @Username, @Gender, @Password)";
+            "\"Gender\",\"Password\") VALUES (@UserID, @Email, @Username, @Gender, @Password)";
 
         int rowsAffected = await _dbContext.connection.ExecuteAsync(query, user);
 
