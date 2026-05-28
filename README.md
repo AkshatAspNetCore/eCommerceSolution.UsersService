@@ -4,6 +4,8 @@ Part of a **3-service microservices architecture** built with **ASP.NET Core**, 
 
 ## 🏗️ Architecture Overview
 
+![eCommerce microservices architecture](users_microservice_architecture.png)
+
 ## Learning Project
 
 Built while working through ".NET Microservices with Azure DevOps & AKS | Basic to Master"(https://www.udemy.com/course/dot-net-microservices-ecommerce-project-azure-devops-kubernetes-aks/learn/lecture/45853823?start=1#overview) by Harsha Vardhan on Udemy.
