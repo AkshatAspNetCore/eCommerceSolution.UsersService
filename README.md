@@ -4,6 +4,8 @@ Part of a **3-service microservices architecture** built with **ASP.NET Core**, 
 
 ## 🏗️ Architecture Overview
 
+This Users Microservice is one of three services in a distributed eCommerce system:
+
 ![eCommerce microservices architecture](users_microservice_architecture.png)
 
 ## Learning Project
