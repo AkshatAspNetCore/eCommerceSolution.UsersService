@@ -20,6 +20,7 @@ namespace ECommerceAppAPI.Controllers
 
         // GET api/users/{userID}
         [HttpGet("{userID}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetUserByUserID(Guid userID)
         {
             if (userID == Guid.Empty)
