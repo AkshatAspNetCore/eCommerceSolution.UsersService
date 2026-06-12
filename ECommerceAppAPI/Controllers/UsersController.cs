@@ -2,11 +2,13 @@
 using ECommerceApp.Core.ServiceContracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECommerceAppAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -18,6 +20,7 @@ namespace ECommerceAppAPI.Controllers
 
         // GET api/users/{userID}
         [HttpGet("{userID}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetUserByUserID(Guid userID)
         {
             if (userID == Guid.Empty)

@@ -15,7 +15,7 @@ namespace ECommerceAppAPI.Controllers
         {
             _userService = userService;
         }
-
+        /*
         [HttpPost("register")] // POST api/auth/register
         public async Task<IActionResult> Register(RegisterRequest registerRequest) 
         {
@@ -46,5 +46,6 @@ namespace ECommerceAppAPI.Controllers
 
             return Ok(authenticationResponse);
         }
+        */
     }
 }
