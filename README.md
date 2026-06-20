@@ -19,7 +19,7 @@ In a production setup, durability would come from **managed databases** (e.g., A
 
 This Users Microservice is one of three services in a distributed eCommerce system:
 
-![eCommerce microservices architecture](users_microservice_architecture_v3.png)
+![eCommerce microservices architecture](users_microservice_architecture_v4.png)
 
 ## Learning Project
 
